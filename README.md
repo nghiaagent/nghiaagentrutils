@@ -7,8 +7,9 @@
 
 <!-- badges: end -->
 
-I set up this packages to centralise some frequently used functions: -
-`recode_msigdbh`: Make MSigDB Hallmark gene set names more readable.
+I set up this packages to centralise some frequently used functions:
+
+- `recode_msigdbh`: Make MSigDB Hallmark gene set names more readable.
 
 ## Installation
 
@@ -20,7 +21,7 @@ You can install the development version of nghiaagentrutils from
 pak::pak("nghiaagent/nghiaagentrutils")
 ```
 
-## Example
+## Examples
 
 ### Making MSigDB Hallmark gene set names more readable
 
