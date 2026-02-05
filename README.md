@@ -7,7 +7,8 @@
 
 <!-- badges: end -->
 
-The goal of nghiaagentrutils is to …
+I set up this packages to centralise some frequently used functions: -
+`recode_msigdbh`: Make MSigDB Hallmark gene set names more readable.
 
 ## Installation
 
@@ -21,33 +22,22 @@ pak::pak("nghiaagent/nghiaagentrutils")
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+### Making MSigDB Hallmark gene set names more readable
+
+Simply supply the `recode_msigdbh()` function with your vector of MSigDB
+Hallmark gene set names!
+
+Ideally, the gene set names are derived from the publicly available GMT
+files at <https://www.gsea-msigdb.org/gsea/msigdb>
 
 ``` r
-library(nghiaagentrutils)
-## basic example code
+## Example
+x <- c(
+  "HALLMARK_ADIPOGENESIS",
+  "HALLMARK_G2M_CHECKPOINT",
+  "HALLMARK_IL6_JAK_STAT3_SIGNALING"
+)
+recode_msigdbh(x)
+#> [1] "Adipogenesis"             "G2/M checkpoint"         
+#> [3] "IL-6/JAK/STAT3 signaling"
 ```
-
-What is special about using `README.Rmd` instead of just `README.md`?
-You can include R chunks like so:
-
-``` r
-summary(cars)
-#>      speed           dist       
-#>  Min.   : 4.0   Min.   :  2.00  
-#>  1st Qu.:12.0   1st Qu.: 26.00  
-#>  Median :15.0   Median : 36.00  
-#>  Mean   :15.4   Mean   : 42.98  
-#>  3rd Qu.:19.0   3rd Qu.: 56.00  
-#>  Max.   :25.0   Max.   :120.00
-```
-
-You’ll still need to render `README.Rmd` regularly, to keep `README.md`
-up-to-date. `devtools::build_readme()` is handy for this.
-
-You can also embed plots, for example:
-
-<img src="man/figures/README-pressure-1.png" alt="" width="100%" />
-
-In that case, don’t forget to commit and push the resulting figure
-files, so they display on GitHub and CRAN.
