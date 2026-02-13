@@ -7,7 +7,7 @@
 
 <!-- badges: end -->
 
-I set up this packages to centralise some frequently used functions:
+I set up this packages to contain my frequently used functions:
 
 - `recode_msigdbh`: Make MSigDB Hallmark gene set names more readable.
 
