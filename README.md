@@ -25,10 +25,10 @@ pak::pak("nghiaagent/nghiaagentrutils")
 
 ### Making MSigDB Hallmark gene set names more readable
 
-Simply supply the `recode_msigdbh()` function with your vector of MSigDB
-Hallmark gene set names!
+Supply the `recode_msigdbh()` function with your vector of MSigDB
+Hallmark gene set names.
 
-Ideally, the gene set names are derived from the publicly available GMT
+Ensure the gene set names are derived from the publicly available GMT
 files at <https://www.gsea-msigdb.org/gsea/msigdb>
 
 ``` r
